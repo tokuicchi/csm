@@ -31,3 +31,7 @@ $ php artisan migrate
 
 $ npm install
 $ npm run dev
+
+## composer 不備
+$ composer require --update-with-dependencies --prefer-dist aws/aws-sdk-php:3.275.0
+$ composer require ellaisys/aws-cognito
