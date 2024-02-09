@@ -8,15 +8,15 @@ $ sudo kill {pid}
 $ docker compose exec app bash
 
 ## Laravelプロジェクトの作成
-$ composer create-project --prefer-dist "laravel/laravel=9.*" .
+$ docker compose exec app composer create-project --prefer-dist "laravel/laravel=9.*" .
 
 ## Laravel確認
-$ php artisan -v
+$ docker compose exec app php artisan -v
 
 localhost:8081 にアクセス
 
 ## マイグレ
-$ php artisan migrate
+$ docker compose exec app php artisan migrate
 
 ## Laravel Sail
 $ cd src
